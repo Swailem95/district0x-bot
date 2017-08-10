@@ -180,6 +180,7 @@ function marketstats(bot,channel) {
                 rank = jp.query(JSON.parse(body), '$[0].rank');
                 if (Array.isArray(rank) && rank.length > 0) {
                     rank = rank[0];
+                }
 
             } catch (ignored) {
                 // invalid response or pair rate
