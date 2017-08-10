@@ -174,13 +174,18 @@ function marketstats(bot,channel) {
                 if (Array.isArray(marketcap) && marketcap.length > 0) {
                     marketcap = marketcap[0];
                     marketcap = formaty(marketcap,2,'$')
+                    
                 }
+                
+                rank = jp.query(JSON.parse(body), '$[0].rank');
+                if (Array.isArray(rank) && rank.length > 0) {
+                    rank = rank[0];
 
             } catch (ignored) {
                 // invalid response or pair rate
             }
 
-            var statmsg = '*'+'Marketcap: '+marketcap+'*\n';
+            var statmsg = '*'+'Rank: '+ rank +  '* \n *Marketcap: '+marketcap+'*\n';
 
                 bot.postMessage(channel, statmsg, {icon_emoji: ':district0x:'});
   
