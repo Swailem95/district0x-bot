@@ -169,6 +169,7 @@ function marketstats(bot,channel) {
                 return;
             }
             var marketcap = 0;
+            var rank = 0;
             try {
                 marketcap = jp.query(JSON.parse(body), '$[0].market_cap_usd');
                 if (Array.isArray(marketcap) && marketcap.length > 0) {
