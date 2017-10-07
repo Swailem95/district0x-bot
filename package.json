@@ -14,11 +14,14 @@
     "request": "^2.81.0",
     "slackbots": "^0.5.1",
     "sleep": "^5.1.1",
-    "xmlhttprequest": "1.8.0"
+    "xmlhttprequest": "1.8.0",
+    "snyk": "^1.42.4"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -29,5 +32,6 @@
   "bugs": {
     "url": "https://github.com/lbryio/hashbot/issues"
   },
-  "homepage": "https://github.com/lbryio/hashbot#readme"
+  "homepage": "https://github.com/lbryio/hashbot#readme",
+  "snyk": true
 }
