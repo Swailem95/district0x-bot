@@ -7,7 +7,7 @@
     "bitcoin": "^3.0.1",
     "imgur": "0.1.7",
     "jsonpath": "0.2.11",
-    "moment": "^2.17.1",
+    "moment": "^2.19.3",
     "mongodb": "^2.2.22",
     "needle": "^1.0.0",
     "numeral": "2.0.6",
